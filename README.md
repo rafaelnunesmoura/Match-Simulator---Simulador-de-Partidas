@@ -14,12 +14,12 @@
 ### 📱 Como rodar o App
 #### com o android studio instalado basta abrir o projeto
 <div align="center">
-	<img src="assets/abrir-o-projeto.png" width="350">
+	<img src="assets/abrir-o-projeto.png" width="550">
 </div>
 
 #### com o projeto já importado vamos verificar se o o device foi escolhido corretamente e  em seguida  clicar no botão run e o android studio que ira buildar o projeto 
 <div align="center">
-	<img src="assets/rodar-app.png" width="350">
+	<img src="assets/rodar-app.png" width="600">
 </div>
 
 #### se tudo deu certo você estara vendo o resultado final do projeto Android.
