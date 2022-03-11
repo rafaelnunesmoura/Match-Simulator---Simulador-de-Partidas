@@ -59,7 +59,7 @@
             android:id="@+id/tvVersus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="X"
+            android:text="@string/x"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
             app:layout_constraintEnd_toStartOf="@+id/tvAwayTeamScore"
