@@ -3,4 +3,5 @@
     <string name="txt_botão_simulate">Botão de simulação do aplicativo</string>
     <string name="txt_ivAwayTeam">Imagem do time Visitante</string>
     <string name="txt_homeTeamImage">Imagem do Time Mandante</string>
+    <string name="x">X</string>
 </resources>
