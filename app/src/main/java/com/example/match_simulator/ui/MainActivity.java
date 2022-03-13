@@ -17,6 +17,7 @@ import com.example.match_simulator.ui.adpter.MatchesAdpter;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
+import java.util.Random;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private MatchesApi matchesApi;
-    private RecyclerView.Adapter matchesAdapter;
+    private MatchesAdpter matchesAdapter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -72,7 +73,13 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     super.onAnimationEnd(animation);
-                    // TODO: Implementar o algoritmo de simulação de partidas.
+                    Random random = new Random();
+                    for (int i = 0; i < matchesAdapter.getItemCount(); i++) {
+                        Match match = matchesAdapter.getMatches().get(i);
+                        match.getHomeTeam().setScore(random.nextInt(match.getHomeTeam().getStars() + 1));
+                        match.getAwayTeams().setScore(random.nextInt(match.getAwayTeams().getStars() + 1));
+                        matchesAdapter.notifyItemChanged(i);
+                    }
 
                 }
 

@@ -49,11 +49,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_default"
-            tools:text="02"
             app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
             app:layout_constraintStart_toEndOf="@+id/ivHomeTeam"
             app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
-            app:layout_constraintVertical_bias="0.554" />
+            app:layout_constraintVertical_bias="0.554"
+            tools:text="02" />
 
         <TextView
             android:id="@+id/tvVersus"
@@ -64,18 +64,19 @@
             app:layout_constraintBottom_toBottomOf="@+id/ivHomeTeam"
             app:layout_constraintEnd_toStartOf="@+id/tvAwayTeamScore"
             app:layout_constraintStart_toEndOf="@+id/tvHomeTeamScore"
-            app:layout_constraintTop_toTopOf="@+id/ivHomeTeam" />
+            app:layout_constraintTop_toTopOf="@+id/ivHomeTeam"
+            app:layout_constraintVertical_bias="0.583" />
 
         <TextView
             android:id="@+id/tvAwayTeamScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_default"
-            tools:text="01"
             app:layout_constraintBottom_toBottomOf="@+id/ivAwayTeam"
             app:layout_constraintEnd_toStartOf="@+id/ivAwayTeam"
             app:layout_constraintTop_toTopOf="@+id/ivAwayTeam"
-            app:layout_constraintVertical_bias="0.554" />
+            app:layout_constraintVertical_bias="0.554"
+            tools:text="01" />
 
         <TextView
             android:id="@+id/tvAwayteamName"

@@ -21,6 +21,9 @@ public class MatchesAdpter extends RecyclerView.Adapter<MatchesAdpter.ViewHolder
         this.matches = matches;
     }
 
+    public List<Match> getMatches() {
+        return matches;
+    }
 
     @NonNull
     @Override
@@ -37,8 +40,15 @@ public class MatchesAdpter extends RecyclerView.Adapter<MatchesAdpter.ViewHolder
 
         Glide.with(context).load(match.getHomeTeam().getImage()).circleCrop().into(holder.binding.ivHomeTeam);
         holder.binding.tvHomeTeamName.setText(match.getHomeTeam().getName());
+        if (match.getHomeTeam().getScore() != null){
+            holder.binding.tvHomeTeamScore.setText(String.valueOf(match.getHomeTeam().getScore()));
+        }
+
         Glide.with(context).load(match.getAwayTeams().getImage()).circleCrop().into(holder.binding.ivAwayTeam);
         holder.binding.tvAwayteamName.setText(match.getHomeTeam().getName());
+        if (match.getHomeTeam().getScore() != null){
+            holder.binding.tvAwayTeamScore.setText(String.valueOf(match.getAwayTeams().getScore()));
+        }
 
 
     }
