@@ -1,6 +1,6 @@
 package com.example.match_simulator.data;
 
-import com.example.match_simulator.Domain.Match;
+import com.example.match_simulator.domain.Match;
 
 import java.util.List;
 
