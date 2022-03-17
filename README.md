@@ -7,9 +7,9 @@
 ### 🖼️ Screenshots:
 
 ### ⚙️ Requisitos:
-- [Android Studio](link)
-- Um smartphone Android ou [Simulador](link)
-- Modo [desenvolvedor](link) ativo caso esteja utilizando o smartphone android fisico
+- [Android Studio](https://developer.android.com/studio)
+- Um smartphone Android ou [Simulador](https://developer.android.com/studio/run/managing-avds?hl=pt-br)
+- Modo [desenvolvedor](https://developer.android.com/studio/debug/dev-options?hl=pt-br) ativo caso esteja utilizando o smartphone android fisico
 
 ### 📱 Como rodar o App
 #### com o android studio instalado basta abrir o projeto
